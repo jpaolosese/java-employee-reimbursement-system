@@ -23,6 +23,16 @@ public class User {
         this.role = role;
     }
 
+    public User(String username, String password, String firstName, String lastName, String email, int age) {
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+        this.role = "employee";
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
